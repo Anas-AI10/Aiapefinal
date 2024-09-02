@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIAPE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/iape.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Libre+Barcode+39+Text&family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <style>
+        /* Ensure the footer is pushed to the bottom */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .page-container {
+            min-height: 100vh; /* Ensures the container takes at least the full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto; /* Pushes the footer to the bottom */
+        }
+
+        /* Additional styles for contact form */
+        #input {
+            padding: 2rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        #input h2 {
+            font-family: 'Bungee', cursive;
+            color: #333;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        #input form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        #input label {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        #input input,
+        #input textarea {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        #input textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        #input button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: 'Bungee', cursive;
+        }
+
+        #input button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <!-- First Navbar: Welcome Message -->
+            <nav class="welcome-nav">
+                <div class="logo-container">
+                    <img class="nav-img" src="" alt="logo">
+                </div>
+                <h1>WELCOME TO AIAPE</h1>
+            </nav>
+            
+            <!-- Second Navbar: Navigation Links -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#center">
+                            Center
+                            <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="search-center.html">Search Center</a></li>
+                            <li><a href="benefits-center.html">Benefits For Academic Center</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#courses">
+                            Courses
+                            <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="nursery.html">Nursery</a></li>
+                            <li><a href="jr-kg.html">Jr. Kg</a></li>
+                            <li><a href="sr-kg.html">Sr. Kg</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#student">
+                            Student
+                            <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="admit-card.html">Admit Card</a></li>
+                            <li><a href="marksheet.html">Marksheet</a></li>
+                            <li><a href="special-instructions.html">Special Instructions For Students</a></li>
+                            <li><a href="tc.html">T & C For Students</a></li>
+                            <li><a href="benefits-students.html">Benefits For Students</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#certifications">
+                            Certifications
+                            <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="approval-aicte.html">Approval By AICTE</a></li>
+                            <li><a href="mhrd.html">MHRD</a></li>
+                            <li><a href="early-childhood.html">Early Childhood Care And Education</a></li>
+                            <li><a href="nep-details.html">NEP Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#exams">
+                            Exam Update
+                            <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="exams.html">Exam Schedule</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#academics">
+                            Academics
+                            <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="programs.html">Programs</a></li>
+                            <li><a href="faculty.html">Faculty</a></li>
+                            <li><a href="admissions.html">Admissions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#contact">
+                            Contact Us
+                            <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="location.html">Location</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#media">
+                            Media
+                            <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Contact Form Section -->
+            <section id="input">
+                <h2>Enter Your Registration Number</h2>
+                <form action="#" method="post">
+                    <label for="registration-number"></label>
+                    <input type="text" id="registration-number" name="registration-number" placeholder="Enter Your Registration Number" required>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 AIAPE. All rights reserved.</p>
+    </footer>
+
+    <script src="notice.js"></script> <!-- JavaScript for notice board auto scroll -->
+</body>
+
+</html>

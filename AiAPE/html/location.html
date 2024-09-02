@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIAPE - Location</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/iape.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Libre+Barcode+39+Text&family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <style>
+        /* General styles for the Location page */
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #008080; /* Teal for first navbar */
+            color: #fff;
+        }
+
+        .welcome-nav {
+            display: flex;
+            align-items: auto;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .main-nav {
+            background-color: #cc0000; /* Red for second navbar */
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .main-nav li {
+            position: fixed;
+        }
+
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .main-nav a:hover {
+            background-color: #ff4d4d; /* Light red on hover */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #cc0000;
+            padding: 10px;
+            list-style: none;
+            margin: 0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            color: #fff;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ff4d4d;
+        }
+
+        .location-section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .location-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-family: 'Cormorant Garamond', serif;
+            border-bottom: 2px solid #cc0000;
+            padding-bottom: 10px;
+        }
+
+        .map-container {
+            margin-bottom: 20px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+        .location-info {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .location-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #cc0000;
+        }
+
+        footer {
+            background-color: #008080; /* Teal for footer */
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- First Navbar: Welcome Message -->
+        <nav class="welcome-nav">
+            <div class="logo-container">
+                <img class="nav-img" src="" alt="logo">
+            </div>
+            <h1>WELCOME TO AIAPE</h1>
+        </nav>
+        
+        <!-- Second Navbar: Navigation Links -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/html/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#center">
+                        Center
+                        <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/html/search-center.html">Search Center</a></li>
+                        <li><a href="/html/benefits-center.html">Benefits For Academic Center</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#courses">
+                        Courses
+                        <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="nursery.html">Nursery</a></li>
+                        <li><a href="/html/">Jr. Kg</a></li>
+                        <li><a href="sr-kg.html">Sr. Kg</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#student">
+                        Student
+                        <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/html/">Admit Card</a></li>
+                        <li><a href="marksheet.html">Marksheet</a></li>
+                        <li><a href="special-instructions.html">Special Instructions For Students</a></li>
+                        <li><a href="tc.html">T & C For Students</a></li>
+                        <li><a href="benefits-students.html">Benefits For Students</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#certifications">
+                        Certifications
+                        <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/assets/Approval-by-AICTE-Notification (1).pdf">Approval By AICTE</a></li>
+                        <li><a href="mhrd.html">MHRD</a></li>
+                        <li><a href="/assets/EARLY-CHILD-HOOD.pdf">Early Childhood Care And Education</a></li>
+                        <li><a href="/assets/NPE-DETAILS.pdf">NEP Details</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#exams">
+                        Exam Update
+                        <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/html/exams.html">Exam Schedule</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#academics">
+                        Academics
+                        <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/html/programs.html">Programs</a></li>
+                        <li><a href="/html/faculty.html">Faculty</a></li>
+                        <li><a href="/html/admissions.html">Admissions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#contact">
+                        Contact Us
+                        <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/html/location.html">Location</a></li>
+                        <li><a href="/html/contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#media">
+                        Media
+                        <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="/html/gallery.html">Photo Gallery</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+    <main>
+        <section class="location-section">
+            <h2>Visit Us</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.145714653!2d72.71637312825884!3d19.082177512495196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1724681680042!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location-info">
+                <h3>Our Address</h3>
+                <p>AIAPE Association<br>
+                123 Main Street, Suite 101<br>
+                Melbourne, VIC 3000<br></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AIAPE Association. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

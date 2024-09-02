@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIAPE</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/counter.css">
+    <link rel="icon" type="image/x-icon" href="/assets/iape.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Libre+Barcode+39+Text&family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <style>
+        /* Notice Board Styles */
+        .notice-board {
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        border-radius: 8px;
+        padding: 10px;
+        width: 100%; /* Full width of the container */
+        max-height: 300px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin: 0; /* Remove margin to stretch across the container */
+        clear: both; /* Ensure it appears below the cards */
+        overflow-y: hidden; /* Enable vertical scrolling if content exceeds max-height */
+}
+
+
+        /* Optional styles for the content inside the notice board */
+        .notice-board h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: #721c24;
+        }
+
+        .notice-board .notice-item {
+            margin-bottom: 10px;
+        }
+
+        .notice-board p {
+            margin-bottom: 0;
+            color: #721c24;
+        }
+
+        /* Wrapper for Cards and Notice Board */
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Cards Container */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 60px; /* Space between cards and notice board */
+        }
+
+        .card__container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .card__article {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .card__img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card__data {
+            padding: 10px;
+        }
+
+        .card__description {
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        .card__title {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .card__button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <!-- First Navbar: Welcome Message -->
+            <nav class="welcome-nav">
+                <div class="logo-container">
+                    <img class="nav-img" src="" alt="logo">
+                </div>
+                <h1>WELCOME TO AIAPE</h1>
+            </nav>
+            
+            <!-- Second Navbar: Navigation Links -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/html/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#center">
+                            Center
+                            <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="/html/search-center.html">Search Center</a></li>
+                            <li><a href="/html/benefits-center.html">Benefits For Academic Center</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#courses">
+                            Courses
+                            <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="nursery.html">Nursery</a></li>
+                            <li><a href="/html/">Jr. Kg</a></li>
+                            <li><a href="sr-kg.html">Sr. Kg</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#student">
+                            Student
+                            <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="/html/">Admit Card</a></li>
+                            <li><a href="marksheet.html">Marksheet</a></li>
+                            <li><a href="special-instructions.html">Special Instructions For Students</a></li>
+                            <li><a href="tc.html">T & C For Students</a></li>
+                            <li><a href="benefits-students.html">Benefits For Students</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#certifications">
+                            Certifications
+                            <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="/assets/Approval-by-AICTE-Notification (1).pdf">Approval By AICTE</a></li>
+                            <li><a href="mhrd.html">MHRD</a></li>
+                            <li><a href="/assets/EARLY-CHILD-HOOD.pdf">Early Childhood Care And Education</a></li>
+                            <li><a href="/assets/NPE-DETAILS.pdf">NEP Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#exams">
+                            Exam Update
+                            <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="/html/exams.html">Exam Schedule</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#academics">
+                            Academics
+                            <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="/html/programs.html">Programs</a></li>
+                            <li><a href="/html/faculty.html">Faculty</a></li>
+                            <li><a href="/html/admissions.html">Admissions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#contact">
+                            Contact Us
+                            <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="/html/location.html">Location</a></li>
+                            <li><a href="/html/contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#media">
+                            Media
+                            <img class="arrow-img" src="/assets/down-arrow.png" alt="Dropdown arrow">
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="/html/gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+    <main class="contact-page">
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, please feel free to contact us using the information below:</p>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>info@aiape.org</p>
+            </div>
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <p>+123-456-7890</p>
+            </div>
+            <div class="contact-item">
+                <h3>Address</h3>
+                <p>1234 School Lane, Education City, EC 56789</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 AIAPE. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

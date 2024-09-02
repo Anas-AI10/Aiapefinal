@@ -1,0 +1,45 @@
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.team-frames {
+    display: flex;
+    justify-content: center; /* Center the frames horizontally */
+    gap: 20px; /* Adjust the gap between the team frames */
+    max-width: 100%; /* Ensure the container doesn't overflow */
+    margin: 0 auto; /* Center the container itself */
+}
+
+.team-frame {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 200px; /* Adjust the width of each frame as needed */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    flex: 0 0 auto; /* Ensures the frames stay side by side */
+}
+
+.team-frame img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.team-frame:hover {
+    transform: scale(1.05);
+}
+
+.team-name {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #555;
+    font-weight: 600;
+}

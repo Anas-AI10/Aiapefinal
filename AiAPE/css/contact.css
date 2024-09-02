@@ -1,0 +1,152 @@
+/* Resetting some default styles */
+body, h1, h2, h3, p {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    color: #fff;
+}
+
+.welcome-nav {
+    background-color: lightseagreen; /* Same as styles.css */
+    color: black;
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center; /* Center text horizontally */
+    position: relative;
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Ensure full width */
+}
+
+.nav-img {
+    max-width: 100px; /* Adjust based on logo size */
+}
+
+.main-nav {
+    height: 60px; /* Adjust height as needed */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%; /* Ensure full height */
+    align-items: center; /* Center items vertically */
+}
+
+.main-nav li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav a:hover, .main-nav .dropdown:hover > a {
+    background-color: #a5a4a4; /* Darker teal on hover */
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 0; /* Remove additional padding for smaller size */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 160px; /* Ensure dropdown width fits content */
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content a {
+    color: #333; /* Set to match the styles.css */
+    padding: 10px; /* Adjust padding to match styles.css */
+    font-size: 16px; /* Adjust font size to match styles.css */
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #a5a4a4; /* Matching hover color */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contact-page {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: #000000; /* Teal color for headings */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

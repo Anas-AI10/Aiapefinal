@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIAPE - History</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/iape.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Libre+Barcode+39+Text&family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* General styles for the History page */
+        .img-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        .img-wrapper {
+            display: flex;
+            width: 400%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-stock-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        .history-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .history-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: 'Cormorant Garamond', serif;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .history-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .history-section .timeline {
+            text-align: left;
+            border-left: 3px solid #007bff;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .history-section .timeline::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            background-color: #007bff;
+            border-radius: 50%;
+        }
+
+        .history-section .timeline-item {
+            margin-bottom: 20px;
+        }
+
+        .history-section .timeline-item h3 {
+            font-size: 1.5rem;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+
+        .history-section .timeline-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- First Navbar: Welcome Message -->
+        <nav class="welcome-nav">
+            <div class="logo-container">
+                <img class="nav-img" src="" alt="AIAPE Logo">
+            </div>
+            <h1>WELCOME TO AIAPE</h1>
+        </nav>
+
+        <!-- Second Navbar: Navigation Links -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#academics">
+                        Academics
+                        <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#about">
+                        About Us
+                        <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="mission.html">Mission</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="history.html">History</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="contact.html">
+                        Contact Us
+                        <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="location.html">Location</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#media">
+                        Media
+                        <img class="arrow-img" src="./assets/down-arrow.png" alt="Dropdown arrow">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="history-section">
+            <h2>Our History</h2>
+            <p>Founded in the early 1990s, AIAPE started as a small initiative with a vision to provide quality education and holistic development to students. Over the years, the institution has grown into a leading educational establishment with a commitment to excellence. Our history is marked by numerous milestones, including the expansion of our facilities, introduction of innovative programs, and significant contributions to the community. Today, AIAPE stands as a beacon of educational success, driven by a mission to foster learning and personal growth.</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>1990 - Founding</h3>
+                    <p>AIAPE was established with the goal of providing exceptional education and creating a nurturing environment for students. The founding team, led by visionaries in education, set the stage for a new era in learning.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2000 - Facility Expansion</h3>
+                    <p>In the early 2000s, the institution underwent significant expansion, adding new classrooms, laboratories, and recreational facilities. This growth allowed AIAPE to accommodate more students and offer a wider range of programs.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2010 - Innovative Programs</h3>
+                    <p>AIAPE introduced a series of innovative programs designed to enhance student engagement and learning. These programs included new extracurricular activities, advanced technology integration, and partnerships with leading organizations.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2020 - Community Outreach</h3>
+                    <p>Our commitment to community involvement grew stronger with the launch of several outreach initiatives. These programs focused on educational support, social responsibility, and fostering stronger ties with the local community.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2024 - Current Achievements</h3>
+                    <p>AIAPE continues to excel in its mission, achieving numerous accolades for academic excellence and innovation. The institution remains dedicated to providing top-quality education and preparing students for a successful future.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 i-APE. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
